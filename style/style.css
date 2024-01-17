@@ -1,0 +1,156 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Main*/
+main {
+  padding: 100px;
+  margin-bottom: 100px;
+}
+.flex {
+  display: flex;
+  box-shadow: 0px 0px 15px 1px #d3d3d38c;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 50px 0;
+}
+.textemain {
+  width: 60%;
+  margin: 80px 60px;
+}
+.textegauche {
+  padding-right: 115px;
+}
+.textedroite {
+  padding-left: 125x;
+}
+.textemain h2 {
+  color: hsl(192, 100%, 9%);
+}
+.textemain p {
+  color: hsl(208, 11%, 55%);
+}
+.imgmain {
+  width: 35%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/*Block sur le Footer*/
+.posrelative {
+  position: relative;
+}
+.blocksurfooter {
+  background-color: white;
+  width: 50%;
+  margin: 0 25%;
+  box-shadow: 0px 0px 10px 0px #52525230;
+  border-radius: 15px;
+  text-align: center;
+  padding: 35px 0;
+  font-size: 20px;
+  position: absolute;
+  bottom: -120px;
+  color: hsl(192, 100%, 9%);
+}
+.boutongetstarted {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  border-radius: 40px;
+  padding: 20px 75px;
+  box-shadow: 0px 6px 15px 1px #d3d3d3;
+}
+.divbouton {
+  margin: 50px auto 30px;
+}
+.boutongetstarted a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 10% 6% 1% 8%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.colonne1 {
+  width: 40%;
+}
+.colonne2,
+.colonne3 {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+}
+.colonne4 {
+  width: 26%;
+}
+.colonne1,
+.colonne2,
+.colonne3 {
+  margin: 3%;
+}
+.colonne2,
+.colonne3 {
+  margin-top: 8%;
+}
+.colonne4 {
+  margin: 11% 0 3% 3%;
+}
+.colonne1 div,
+.copyright {
+  display: flex;
+}
+.colonne2 a,
+.colonne3 a {
+  margin: 15px 0;
+}
+.iconecontact {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.colonne1 div {
+  margin: 30px 0;
+}
+.line-height {
+  line-height: 1.5;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.icone {
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 6px 9px;
+  margin: 0 5px;
+}
+.icone:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+}
+.copyright {
+  margin-top: 60%;
+  font-size: 11px;
+}
+.copyright i {
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 10px;
+}
