@@ -1,0 +1,65 @@
+@media only screen and (max-width: 480px) {
+  /*Block sur le Footer*/
+
+  .blocksurfooter {
+    width: 90%;
+    margin: 0 5%;
+    bottom: -105px;
+  }
+  .blocksurfooter h2 {
+    font-size: 18px;
+  }
+  .boutongetstarted {
+    font-size: 12px;
+    padding: 20px 70px;
+  }
+
+  /*Footer*/
+  .flex {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 3%;
+  }
+
+  .colonne1,
+  .colonne2,
+  .colonne3,
+  .colonne4 {
+    width: 94%;
+  }
+
+  .colonne1 {
+    margin-top: 40%;
+  }
+
+  .logohuddlefooter {
+    width: 50%;
+  }
+
+  .colonne2,
+  .colonne3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .colonne4 div {
+    width: 44%;
+    margin: 0 27%;
+  }
+  .icone {
+    padding: 6px 7px;
+  }
+
+  .copyright {
+    margin-top: 10%;
+    font-size: 14px;
+    width: 86%;
+    margin: 10% 7%;
+  }
+  .copyright i {
+    font-size: 10px;
+  }
+}
