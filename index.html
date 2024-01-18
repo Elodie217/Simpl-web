@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agence web</title>
+    <script
+      src="https://kit.fontawesome.com/97cd5da9a0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/responsive.css" />
     <link rel="stylesheet" href="style/reset.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <header>
@@ -46,8 +51,8 @@
     </header>
 
     <main>
-      <div>
-        <div>
+      <div class="flex">
+        <div class="textemain textegauche">
           <h2>Grow together</h2>
           <p>
             Generate meaningful discussions with your audience and build a
@@ -59,10 +64,11 @@
         <img
           src="./images/illustration_grow_together.svg"
           alt="Utilisateurs sur le reseau"
+          class="imgmain"
         />
       </div>
-      <div>
-        <div>
+      <div class="flex reverse">
+        <div class="textemain textedroite">
           <h2>Flowing Conversations</h2>
           <p>
             You wouldn't paginate a conversation in real life, so why do it
@@ -74,10 +80,11 @@
         <img
           src="./images/illustration_flowing_conversation.svg"
           alt="Utilisateurs sur le reseau"
+          class="imgmain"
         />
       </div>
-      <div>
-        <div>
+      <div class="flex">
+        <div class="textemain textegauche">
           <h2>Your Users</h2>
           <p>
             It takes no time at all to integrate Huddle with your app's
@@ -89,57 +96,73 @@
         <img
           src="./images/illustration_your_users.svg"
           alt="Utilisateurs sur le reseau"
+          class="imgmain"
         />
       </div>
-
-      <section>
-        <h2>Ready To Build Your Community ?</h2>
-        <div>Get Started For Free</div>
-      </section>
     </main>
+
+    <!--Block Get Started for free-->
+    <section class="posrelative">
+      <section class="blocksurfooter">
+        <h2>Ready To Build Your Community ?</h2>
+        <div class="divbouton">
+          <a href="" class="boutongetstarted">Get started for Free</a>
+        </div>
+        <!-- <div class="boutongetstarted"><a href="">Get Started For Free</a></div> -->
+      </section>
+    </section>
+
+    <!--Footer-->
     <footer>
-      <section>
-        <img src="images/logo.svg" alt="Logo Huddle" />
+      <section class="colonne1">
+        <img src="images/logoblanc.svg" alt="Logo Huddle" />
         <div>
-          <img src="images/icon_location.svg" alt="icone localisation" />
-          <p>
+          <img
+            src="images/icon_location.svg"
+            alt="icone localisation"
+            class="iconecontact"
+          />
+          <p class="line-height">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            rem neque quisquam fugit ducimus illum repudiandae aspernatur dicta?
+            rem neque quisquam fugit ducimus illum aspernatur dicta?
           </p>
         </div>
         <div>
-          <img src="images/icon_phone.svg" alt="icone phone" /><a
-            href="tel:+15431234567"
-            >+1-543-123-4567</a
-          >
+          <img
+            src="images/icon_phone.svg"
+            alt="icone phone"
+            class="iconecontact"
+          /><a href="tel:+15431234567">+1-543-123-4567</a>
         </div>
         <div>
-          <img src="images/icon_email.svg" alt="icone email" /><a
-            href="mailto:xample@huddle.com"
-            >example@huddle.com</a
-          >
+          <img
+            src="images/icon_email.svg"
+            alt="icone email"
+            class="iconecontact"
+          /><a href="mailto:xample@huddle.com">example@huddle.com</a>
         </div>
       </section>
-      <section>
+      <section class="colonne2">
         <a href="#">About Us</a>
         <a href="#">What We Do</a>
         <a href="#">FAQ</a>
       </section>
-      <section>
+      <section class="colonne3">
         <a href="#">Career</a>
         <a href="#">Blog</a>
         <a href="#">Contact Us</a>
       </section>
-      <section>
+      <section class="colonne4">
         <div>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="icone"><i class="fa-brands fa-facebook"></i></a>
+          <a href="" class="icone"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" class="icone"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <div>
-          <i class="fa-regular fa-copyright"></i>
-          <p>Copyright 2018 Huddle. All rights reserved.</p>
-        </div>
+
+        <p class="copyright">
+          <i class="fa-regular fa-copyright"></i>Copyright 2018 Huddle. All
+          rights reserved.
+        </p>
       </section>
     </footer>
   </body>
