@@ -1,0 +1,83 @@
+@media only screen and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    padding: 10% 6% 1% 8%;
+  }
+  header {
+    background-image: url(../images/bg_hero_mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    font-family: "Poppins", sans-serif;
+    padding: 25px 5px 0 15px;
+  }
+  .headerlogo {
+    height: 1%;
+    width: 120px;
+  }
+  .headertitle {
+    display: flex;
+    flex-direction: column;
+  }
+  .tryitfree {
+    margin: 0 10px 50px 0;
+    padding: 6px 30px 6px 30px;
+    font-size: 11px;
+  }
+  h1 {
+    padding: 0 20px 0 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .headerimg {
+    width: 90%;
+    padding-left: 5%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .titleheader {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .firstp {
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 15px 0 15px;
+    line-height: 1.5;
+  }
+  .gsff {
+    margin-left: 45px;
+  }
+
+  /* Body */
+
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .imgmain {
+    width: 100%;
+  }
+  main {
+    padding: 20px;
+  }
+  .textegauche {
+    padding-right: 0;
+  }
+
+  .textemain {
+    width: 100%;
+    margin: 0;
+  }
+
+  .textemain h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 21px;
+  }
+  .textemain p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14.75px;
+  }
+}
