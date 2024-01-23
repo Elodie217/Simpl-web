@@ -26,6 +26,11 @@
   </head>
   <body>
     <header>
+      <div class="choixLangue">
+        <button class="boutonLangue" onclick="langue('anglais')"><img class="drapeau" id="drapeauEn" src="./images/Drapeau anglais.png" alt="Un joli drapeau anglais"></button>
+        <button class="boutonLangue" onclick="langue('français')"><img class="drapeau" id="drapeauFr" src="./images/Drapeau français.png" alt="Un joli drapeau français"></button>
+        <button class="boutonLangue" onclick="langue('japonais')"><img class="drapeau" id="drapeauJa" src="./images/Drapeau japonais.png" alt="Un joli drapeau japonais"></button>
+      </div>
       <div class="header">
         <img src="./images/logo.svg" alt="Le logo Huddle" class="headerlogo" />
         <a href="#" class="tryitfree"> Try It Free </a>
@@ -52,8 +57,8 @@
     <main>
       <div class="flex">
         <div class="textemain textegauche">
-          <h2>Grow together</h2>
-          <p>
+          <h2 id="firstH">Grow together</h2>
+          <p id="premierP">
             Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insightful conversations you
             miss out on with a feedback form.
@@ -68,8 +73,8 @@
       </div>
       <div class="flex reverse">
         <div class="textemain textedroite">
-          <h2>Flowing Conversations</h2>
-          <p>
+          <h2 id="secondH">Flowing Conversations</h2>
+          <p id="deuxiemeP"> 
             You wouldn't paginate a conversation in real life, so why do it
             online ? Our threads have just-in-time loading for a more natural
             flow.
@@ -84,8 +89,8 @@
       </div>
       <div class="flex">
         <div class="textemain textegauche">
-          <h2>Your Users</h2>
-          <p>
+          <h2 id="thirdH">Your Users</h2>
+          <p id="troisiemeP">
             It takes no time at all to integrate Huddle with your app's
             authentication solution. This means, once signed in to your app,
             your users can start chatting immediately.
@@ -103,9 +108,9 @@
     <!--Block Get Started for free-->
     <section class="posrelative">
       <section class="blocksurfooter">
-        <h2>Ready To Build Your Community ?</h2>
+        <h2 id="fourthH">Ready To Build Your Community ?</h2>
         <div class="divbouton">
-          <a href="" class="boutongetstarted">Get started for Free</a>
+          <a href="" class="boutongetstarted" id="boutongetstarted">Get Started For Free</a>
         </div>
         <!-- <div class="boutongetstarted"><a href="">Get Started For Free</a></div> -->
       </section>
@@ -146,14 +151,14 @@
         </div>
       </section>
       <section class="colonne2">
-        <a href="#">About Us</a>
-        <a href="#">What We Do</a>
+        <a href="#" class="aPropos">About Us</a>
+        <a href="#" class="ceQuonFait" >What We Do</a>
         <a href="#">FAQ</a>
       </section>
       <section class="colonne3">
-        <a href="#">Career</a>
+        <a href="#" class="carriere">Career</a>
         <a href="#">Blog</a>
-        <a href="#">Contact Us</a>
+        <a href="#" class="nousContacter">Contact Us</a>
       </section>
       <section class="colonne4">
         <div>
@@ -169,4 +174,5 @@
       </section>
     </footer>
   </body>
+  <script src="./script/script.js"></script>
 </html>
