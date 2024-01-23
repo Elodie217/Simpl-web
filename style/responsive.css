@@ -43,7 +43,7 @@
     line-height: 1.5;
   }
   .gsff {
-    margin-left: 45px;
+    margin: 0 15%;
   }
 
   /* Body */
@@ -89,6 +89,7 @@
   .boutongetstarted {
     font-size: 12px;
     padding: 20px 70px;
+    margin: 0 24%;
   }
 
   /*Footer*/
