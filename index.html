@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huddle : Agence web</title>
-    <meta
+<meta
       name="description"
       content="Bienvenue sur Huddle, le site qui vous propose une interface optimal pour votre réseau professionnel."
     />
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/responsive.css" />
     <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/popup.css" />
+<link rel="stylesheet" href="style/popup.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,33 +64,33 @@
     <div class="flou visibility"></div>
     <section class="popup visibility">
       <img src="images/fermer.png" alt="logo fermeture" class="logofermeture" />
-      <h2>Start For Free By Filling Out The Form</h2>
+      <h2 class="formulaireTitle">Start For Free By Filling Out The Form</h2>
 
       <div class="form">
         <div class="parent">
           <div class="div1">
-            <label for="nom">Surname</label> <br />
+            <label for="nom" class="yourSurname">Surname</label> <br />
             <input type="text" placeholder="Smith" name="nom" />
           </div>
           <div class="div2">
-            <label for="prenom">First name</label> <br />
+            <label for="prenom" class="yourName">First name</label> <br />
             <input type="text" placeholder="Johanna" name="prenom" />
           </div>
           <div class="div3">
-            <legend>Gender</legend>
+            <legend class="yourGender">Gender</legend>
 
             <div class="parentgenre">
               <div class="div11">
                 <input type="radio" id="man" name="gender" value="man" />
-                <label for="man">Man</label><br />
+                <label for="man" class="iMMan">Man</label><br />
               </div>
               <div class="div12">
                 <input type="radio" id="Woman" name="gender" value="Woman" />
-                <label for="Woman">Woman</label><br />
+                <label for="Woman" class="iMWoman">Woman</label><br />
               </div>
               <div class="div13">
                 <input type="radio" id="Other" name="gender" value="Other" />
-                <label for="Other">Other</label> <br />
+                <label for="Other" class="iMOther">Other</label> <br />
               </div>
               <div class="div14">
                 <input
@@ -100,12 +100,12 @@
                   value="noanswer"
                   checked
                 />
-                <label for="noanswer">Don't want to say</label>
+                <label for="noanswer" class="dwts">Don't want to say</label>
               </div>
             </div>
           </div>
           <div class="div4">
-            <label for="birth">Date of birth </label> <br />
+            <label for="birth" class="yourBirth">Date of birth </label> <br />
             <input type="date" name="birth" />
           </div>
           <div class="div5">
@@ -117,35 +117,35 @@
             />
           </div>
           <div class="div6">
-            <label for="tel">Phone</label> <br />
+            <label for="tel" class="yourPhone">Phone</label> <br />
             <input type="text" name="tel" placeholder="06 12 34 56 78" />
           </div>
 
           <fieldset class="div7">
-            <legend>What do you expect from this community ?</legend>
+            <legend class="yourExpect">What do you expect from this community ?</legend>
 
             <div class="parentcheck">
               <div class="div11">
                 <input type="checkbox" id="friends" name="friends" checked />
-                <label for="friends">Increase my circle of friends</label>
+                <label for="friends" class="needFriend">Increase my circle of friends</label>
               </div>
               <div class="div12">
                 <input type="checkbox" id="work" name="work" />
-                <label for="work">For work</label>
+                <label for="work" class="forWork">For work</label>
               </div>
               <div class="div13">
                 <input type="checkbox" id="lonely" name="lonely" />
-                <label for="lonely">I feel lonely</label>
+                <label for="lonely" class="feelLonely">I feel lonely</label>
               </div>
               <div class="div14">
                 <input type="checkbox" id="passions" name="passions" />
-                <label for="passions">Share my passions</label>
+                <label for="passions" class="yourPassion">Share my passions</label>
               </div>
             </div>
           </fieldset>
 
           <div class="div8">
-            <input type="submit" name="Envoyer" id="boutonEnvoyer" />
+            <input type="submit" name="Envoyer" id="boutonEnvoyer" value="Send"/>
           </div>
         </div>
       </div>
@@ -209,10 +209,9 @@
         <div class="divbouton">
 
           <div class="boutongetstarted">Get started for Free</div>
-          <a href="" class="boutongetstarted" id="boutongetstarted">Get Started For Free</a>
-
+        
         </div>
-      </section>
+              </section>
     </section>
 
     <!--Footer-->
@@ -252,11 +251,11 @@
       <section class="colonne2">
         <a href="#" class="aPropos">About Us</a>
         <a href="#" class="ceQuonFait" >What We Do</a>
-        <a href="#">FAQ</a>
+        <a href="#" class="faq">FAQ</a>
       </section>
       <section class="colonne3">
         <a href="#" class="carriere">Career</a>
-        <a href="#">Blog</a>
+        <a href="#" class="blog">Blog</a>
         <a href="#" class="nousContacter">Contact Us</a>
       </section>
       <section class="colonne4">
@@ -283,5 +282,5 @@
   <script src="./script/popup.js"></script>
 
   <script src="./script/script.js"></script>
-
+  
 </html>

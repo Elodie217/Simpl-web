@@ -1,4 +1,19 @@
-// Définition des variables
+// Garder en mémoire au chargement de la page
+
+  let langueChoisie = window.localStorage.getItem("choixLangue");
+    console.log(langueChoisie)
+
+switch(langueChoisie){
+    case "en": choixLangueEn()
+    break;
+    case "fr": choixLangueFr()
+    break;
+    case "ja": choixLangueJa()
+    break;
+    default: choixLangueEn()
+}
+
+// Définition des variables pour la traduction
 
 let drapeauFr = document.querySelector("#drapeauFr");
 let drapeauEn = document.querySelector("#drapeauEn");
@@ -24,13 +39,36 @@ function choixLangueEn (){
     document.querySelector("#thirdH").innerText = 'Your Users';
     document.querySelector("#troisiemeP").innerText = "It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately. ";
     document.querySelector("#fourthH").innerText = 'Ready To Build Your Community ?';
-    document.querySelector("#boutongetstarted").innerText = 'Get Started For Free';
+    document.querySelector(".boutongetstarted").innerText = 'Get Started For Free';
+    document.querySelector(".line-height").innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem neque quisquam fugit ducimus illum aspernatur dicta?';
     document.querySelector(".aPropos").innerText = 'About Us';
     document.querySelector(".ceQuonFait").innerText = 'What We Do';
     document.querySelector(".carriere").innerText = 'Carrier';
     document.querySelector(".nousContacter").innerText = 'Contact Us';
+    document.querySelector(".faq").innerText = 'FAQ';
+    document.querySelector(".blog").innerText = 'Blog';
     document.querySelector(".copyright").innerHTML = '<p><i class="fa-regular fa-copyright"></i>Copyright 2018 Huddle. All rights reserved.</p>';
 
+        // Formulaire en anglais
+
+    document.querySelector(".formulaireTitle").innerText = 'Start For Free By Filling Out The Form';
+    document.querySelector(".yourSurname").innerText = 'Surname';
+    document.querySelector(".yourName").innerText = 'First name';
+    document.querySelector(".yourGender").innerText = 'Gender';
+    document.querySelector(".iMMan").innerText = 'Man';
+    document.querySelector(".iMWoman").innerText = 'Woman';
+    document.querySelector(".iMOther").innerText = 'Other';
+    document.querySelector(".dwts").innerText = "Don't want to say";
+    document.querySelector(".yourBirth").innerText = 'Date of Birth';
+    document.querySelector(".yourPhone").innerText = 'Phone';
+    document.querySelector(".yourExpect").innerText = 'What do you expect from this community ?';
+    document.querySelector(".needFriend").innerText = 'Increase my circle of friends';
+    document.querySelector(".forWork").innerText = 'For work';
+    document.querySelector(".feelLonely").innerText = 'I feel lonely';
+    document.querySelector(".yourPassion").innerText = 'Share my passions';
+    document.querySelector("#boutonEnvoyer").value = 'Send';
+
+    window.localStorage.setItem("choixLangue", "en");
 }
 
 function choixLangueFr(){
@@ -46,13 +84,36 @@ function choixLangueFr(){
     document.querySelector("#thirdH").innerText = 'Vos Utilisateurs';
     document.querySelector("#troisiemeP").innerText = "L'intégration de Huddle à la solution d'authentification de votre application ne prend aucun temps. Cela signifie qu'une fois connectés à votre application, vos utilisateurs peuvent commencer à discuter immédiatement.";
     document.querySelector("#fourthH").innerText = 'Prêt à bâtir votre communauté ?';
-    document.querySelector("#boutongetstarted").innerText = 'Commencez Gratuitement';
+    document.querySelector(".boutongetstarted").innerText = 'Commencez Gratuitement';
+    document.querySelector(".line-height").innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem neque quisquam fugit ducimus illum aspernatur dicta?';
     document.querySelector(".aPropos").innerText = 'A Propos';
     document.querySelector(".ceQuonFait").innerText = 'Nos activités';
     document.querySelector(".carriere").innerText = 'Carrière';
     document.querySelector(".nousContacter").innerText = 'Nous Contacter';
-    document.querySelector(".copyright").innerText = '<p><i class="fa-regular fa-copyright"></i>Copyright 2018 Huddle. Tous droits réservés.</p>';
+    document.querySelector(".faq").innerText = 'FAQ';
+    document.querySelector(".blog").innerText = 'Blog';
+    document.querySelector(".copyright").innerHTML = '<p><i class="fa-regular fa-copyright"></i>Copyright 2018 Huddle. Tous droits réservés.</p>';
 
+    // Formulaire en français
+
+    document.querySelector(".formulaireTitle").innerText = 'Commencez gratuitement en remplissant le formulaire';
+    document.querySelector(".yourSurname").innerText = 'Nom';
+    document.querySelector(".yourName").innerText = 'Prénom';
+    document.querySelector(".yourGender").innerText = 'Genre';
+    document.querySelector(".iMMan").innerText = 'Homme';
+    document.querySelector(".iMWoman").innerText = 'Femme';
+    document.querySelector(".iMOther").innerText = 'Autre';
+    document.querySelector(".dwts").innerText = 'Ne se prononce pas';
+    document.querySelector(".yourBirth").innerText = 'Date de naissance';
+    document.querySelector(".yourPhone").innerText = 'Téléphone';
+    document.querySelector(".yourExpect").innerText = "Qu'attendez-vous de cette communauté ?";
+    document.querySelector(".needFriend").innerText = "Agrandir mon cercle d'amis";
+    document.querySelector(".forWork").innerText = 'Pour le travail';
+    document.querySelector(".feelLonely").innerText = 'Je me sens seul';
+    document.querySelector(".yourPassion").innerText = 'Partager mes passions';
+    document.querySelector("#boutonEnvoyer").value = 'Envoyer';
+
+    window.localStorage.setItem("choixLangue", "fr");
 }
 
 function choixLangueJa (){
@@ -68,14 +129,36 @@ function choixLangueJa (){
     document.querySelector("#troisiemeP").innerText = "Huddle をアプリの認証ソリューションと統合するのに時間はかかりません。つまり、アプリにサインインすると、ユーザーはすぐにチャットを開始できるようになります。";
     document.querySelector("#fourthH").innerText = 'コミュニティを構築する準備はできましたか?';
     document.querySelector("#fourthH").style.fontSize = "18px";
-    document.querySelector("#boutongetstarted").innerText = '無料で始めましょう';
+    document.querySelector(".boutongetstarted").innerText = '無料で始めましょう';
+    document.querySelector(".line-height").innerText = '会社自体は非常に成功している会社です。賛美者この問題を解決しても誰も逃げないのに、私たちはその言葉によって彼を激怒させるだろうか？'
     document.querySelector(".aPropos").innerText = '私たちについて';
     document.querySelector(".ceQuonFait").innerText = 'N私達がすること';
     document.querySelector(".carriere").innerText = 'キャリア';
     document.querySelector(".nousContacter").innerText = 'お問い合わせ';
-    document.querySelector(".copyright").innerText = '<p><i class="fa-regular fa-copyright"></i> 著作権 2018 ハドル。無断転載を禁じます。</p>';
     document.querySelector(".faq").innerText = 'よくある質問';
     document.querySelector(".blog").innerText ='ブログ';
+    document.querySelector(".copyright").innerHTML = '<p><i class="fa-regular fa-copyright"></i>著作権 2018 ハドル。無断転載を禁じます。</p>';
+    
+    // Formulaire en japonais
+
+    document.querySelector(".formulaireTitle").innerText = 'フォームに記入して無料で始めましょう';
+    document.querySelector(".yourSurname").innerText = '姓';
+    document.querySelector(".yourName").innerText = 'ファーストネーム';
+    document.querySelector(".yourGender").innerText = '性別';
+    document.querySelector(".iMMan").innerText = '男';
+    document.querySelector(".iMWoman").innerText = '女性';
+    document.querySelector(".iMOther").innerText = '他の';
+    document.querySelector(".dwts").innerText = '言いたくない';
+    document.querySelector(".yourBirth").innerText = '生年月日';
+    document.querySelector(".yourPhone").innerText = '電話';
+    document.querySelector(".yourExpect").innerText = 'このコミュニティに何を期待しますか?';
+    document.querySelector(".needFriend").innerText = '友達の輪を増やす';
+    document.querySelector(".forWork").innerText = '作業用';
+    document.querySelector(".feelLonely").innerText = '私は孤独を感じる';
+    document.querySelector(".yourPassion").innerText = '私の情熱を共有してください';
+    document.querySelector("#boutonEnvoyer").value = '送信';
+
+    window.localStorage.setItem("choixLangue", "ja");
 }
 
 function langue(langueOnClick){

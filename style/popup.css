@@ -19,6 +19,7 @@
   padding: 10px 10px 0px 10px;
   border: 2px solid hsl(322, 100%, 66%);
   box-shadow: 1px 1px 15px 1px lightgrey;
+  height: 89%;
   /* visibility: hidden; */
 }
 .flou {
