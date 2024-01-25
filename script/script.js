@@ -1,3 +1,29 @@
+// Age
+
+agesauvegarder = window.localStorage.getItem("agesauv");
+
+if (agesauvegarder >= 18) {
+  window.localStorage.setItem("agesauv", age);
+} else {
+  affichageerreur();
+}
+
+function affichageerreur() {
+  let age = prompt("Quel est votre age ?");
+
+  let pageerreur = document.querySelector(".pageerreur");
+  if (age < 18) {
+    pageerreur.classList.remove("visibility");
+
+    let delais = 18 - age;
+    document.querySelector(
+      ".reviensdans"
+    ).innerHTML = `Come back in ${delais} years.`;
+  } else {
+    window.localStorage.setItem("agesauv", age);
+  }
+}
+
 // Garder en mémoire au chargement de la page
 
   let langueChoisie = window.localStorage.getItem("choixLangue");
@@ -22,6 +48,7 @@ let drapeauJa = document.querySelector("#drapeauJa");
 drapeauEn.addEventListener("click", choixLangueEn);
 drapeauFr.addEventListener("click", choixLangueFr);
 drapeauJa.addEventListener("click", choixLangueJa);
+
 
     
 // Ajout du changement de langue 
@@ -139,6 +166,11 @@ function choixLangueFr(){
     // Pour enregistrer la langue au chargement de la page
 
     window.localStorage.setItem("choixLangue", "fr");
+
+// Ajout du changement de langue
+
+
+
 }
     // Traduction de la page en japonais
 
@@ -196,18 +228,17 @@ function choixLangueJa (){
     // Pour enregistrer la langue au chargement de la page
 
     window.localStorage.setItem("choixLangue", "ja");
+
 }
 
-function langue(langueOnClick){
-if (langueOnClick === "japonais"){
-    choixLangueJa()
-}
-else if (langueOnClick === "anglais"){
-   choixLangueEn() 
-}
-else if (langueOnClick === "français"){
-    choixLangueFr()
-}
+function langue(langueOnClick) {
+  if (langueOnClick === "japonais") {
+    choixLangueJa();
+  } else if (langueOnClick === "anglais") {
+    choixLangueEn();
+  } else if (langueOnClick === "français") {
+    choixLangueFr();
+  }
 }
 
 // Ajout en mémoire de la langue définie

@@ -1,42 +1,46 @@
-/* Header*/
-
-.choixLangue {
-
-display: flex;
-width: 100%;
-height: 8vh;
-justify-content: flex-end;
-padding-top: 10px;
-
+/*Reset*/
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.boutonLangue{
+p {
+  margin: 0;
+}
+
+/* Header*/
+/*Langues*/
+
+.choixLangue {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.boutonLangue {
   border: none;
   background-color: #f000;
 }
 
 .drapeau {
-
-width: 100%;
-height: 5vh;
-transition: transform .5s;
-
-
+  width: 100%;
+  height: 5vh;
+  transition: transform 0.5s;
 }
 
-.drapeau:hover{
-
-cursor: pointer;
-transform: scale(1.5);
+.drapeau:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 header {
-
   background-image: url(../images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
   font-family: "Poppins", sans-serif;
   padding: 0 70px 70px 70px;
-
 }
 
 .header {
@@ -266,4 +270,39 @@ footer a:hover {
   margin-top: 3px;
   margin-right: 5px;
   font-size: 10px;
+}
+
+/*Page erreur*/
+.pageerreur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg_hero_desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diverreur {
+  /* border: 2px solid hsl(322, 100%, 66%); */
+  border-radius: 15px;
+  padding: 10px;
+  width: 30%;
+  margin: 0 5%;
+}
+.pageerreur img {
+  width: 50%;
+  margin: 20px 5%;
+}
+.notallowed {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+.gras {
+  font-weight: 600;
+  font-size: 100px;
+  margin-bottom: 100px;
+  text-align: center;
 }

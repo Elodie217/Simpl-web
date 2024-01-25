@@ -14,9 +14,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/popup.css" />
+    <link rel="stylesheet" href="style/shiny.css" />
     <link rel="stylesheet" href="style/responsive.css" />
-    <link rel="stylesheet" href="style/reset.css" />
-<link rel="stylesheet" href="style/popup.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,12 +30,56 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="relative">
+    <!--Page erreur-->
+    <div class="pageerreur visibility">
+      <img src="images/logo.svg" alt="Logo" />
+
+      <div class="diverreur">
+        <p class="gras">Error</p>
+        <p class="notallowed">You are not allowed visiting us.</p>
+        <p class="reviensdans notallowed"></p>
+      </div>
+    </div>
+    <!--Nyan cat-->
+    <img src="images/nyan-cat.gif" alt="" class="nyan" />
+    <img src="images/nyan-cat.gif" alt="" class="nyanpetit" />
+
     <header>
       <div class="choixLangue">
-        <button class="boutonLangue" onclick="langue('anglais')"><img class="drapeau" id="drapeauEn" src="./images/Drapeau anglais.png" alt="Un joli drapeau anglais"></button>
-        <button class="boutonLangue" onclick="langue('français')"><img class="drapeau" id="drapeauFr" src="./images/Drapeau français.png" alt="Un joli drapeau français"></button>
-        <button class="boutonLangue" onclick="langue('japonais')"><img class="drapeau" id="drapeauJa" src="./images/Drapeau japonais.png" alt="Un joli drapeau japonais"></button>
+        <!-- Rounded switch -->
+        <label
+          class="switch picto shinybfond"
+          aria-label="Essayer notre mode Shiny !"
+        >
+          <input type="checkbox" class="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <!--Langues-->
+        <button class="boutonLangue" onclick="langue('anglais')">
+          <img
+            class="drapeau"
+            id="drapeauEn"
+            src="./images/Drapeau anglais.png"
+            alt="Un joli drapeau anglais"
+          />
+        </button>
+        <button class="boutonLangue" onclick="langue('français')">
+          <img
+            class="drapeau"
+            id="drapeauFr"
+            src="./images/Drapeau français.png"
+            alt="Un joli drapeau français"
+          />
+        </button>
+        <button class="boutonLangue" onclick="langue('japonais')">
+          <img
+            class="drapeau"
+            id="drapeauJa"
+            src="./images/Drapeau japonais.png"
+            alt="Un joli drapeau japonais"
+          />
+        </button>
       </div>
       <div class="header">
         <img src="./images/logo.svg" alt="Le logo Huddle" class="headerlogo" />
@@ -146,6 +190,7 @@
 
           <div class="div8">
             <input type="submit" name="Envoyer" id="boutonEnvoyer" value="Send"/>
+
           </div>
         </div>
       </div>
@@ -221,7 +266,7 @@
       <div class="flex reverse affichage2">
         <div class="textemain textedroite">
           <h2 id="secondH">Flowing Conversations</h2>
-          <p id="deuxiemeP"> 
+          <p id="deuxiemeP">
             You wouldn't paginate a conversation in real life, so why do it
             online ? Our threads have just-in-time loading for a more natural
             flow.
@@ -234,7 +279,8 @@
           class="imgmain"
         />
       </div>
-      <div class="flex affichage3">
+      <div class="flex flex3 affichage3">
+
         <div class="textemain textegauche">
           <h2 id="thirdH">Your Users</h2>
           <p id="troisiemeP">
@@ -257,9 +303,8 @@
       <section class="blocksurfooter">
         <h2 id="fourthH">Ready To Build Your Community ?</h2>
         <div class="divbouton">
-
           <div class="boutongetstarted">Get started for Free</div>
-        
+
         </div>
               </section>
     </section>
@@ -302,6 +347,7 @@
         <a href="#" class="aPropos">About Us</a>
         <a href="#" class="ceQuonFait" >What We Do</a>
         <a href="#" class="faq">FAQ</a>
+
       </section>
       <section class="colonne3">
         <a href="#" class="carriere">Career</a>
@@ -313,10 +359,13 @@
           <a href="https://www.facebook.com/" target="_blank" class="icone"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a href="https://twitter.com/" target="_blank" class="icone"
+          <a href="https://twitter.com/" target="_blank" class="icone icone2"
             ><i class="fa-brands fa-twitter"></i
           ></a>
-          <a href="https://www.instagram.com/" target="_blank" class="icone"
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="icone icone3"
             ><i class="fa-brands fa-instagram"></i
           ></a>
         </div>
@@ -335,4 +384,6 @@
 
   <script src="./script/FlewButton.js"></script>
   
+  <script src="script/shiny.js"></script>
+
 </html>
