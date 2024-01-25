@@ -1,42 +1,35 @@
 /* Header*/
+/*Langues*/
 
 .choixLangue {
-
-display: flex;
-width: 100%;
-height: 8vh;
-justify-content: flex-end;
-padding-top: 10px;
-
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  justify-content: flex-end;
+  padding-top: 10px;
 }
 
-.boutonLangue{
+.boutonLangue {
   border: none;
   background-color: #f000;
 }
 
 .drapeau {
-
-width: 100%;
-height: 5vh;
-transition: transform .5s;
-
-
+  width: 100%;
+  height: 5vh;
+  transition: transform 0.5s;
 }
 
-.drapeau:hover{
-
-cursor: pointer;
-transform: scale(1.5);
+.drapeau:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 header {
-
   background-image: url(../images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
   font-family: "Poppins", sans-serif;
   padding: 0 70px 70px 70px;
-
 }
 
 .header {
