@@ -297,7 +297,7 @@ input:checked + .slider:before {
   position: fixed;
   width: 20%;
   top: 540px;
-  left: -300px;
+  left: -400px;
   z-index: 2;
 }
 
@@ -305,6 +305,7 @@ input:checked + .slider:before {
   animation: nyanmouvementinfinit 6s linear infinite;
   animation-delay: 4s;
 }
+
 @keyframes nyanmouvementinfinit {
   from {
     top: 540px;

@@ -48,15 +48,15 @@
 
   /*Pop up*/
   .popup {
-    position: absoulte !important;
-    width: 80% !important;
-    margin: 10px 10% !important;
+    position: absolute;
+    width: 80%;
+    margin: 10px 8%;
     top: 10px;
   }
   .parent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr) 2fr repeat(3, 1fr) 2fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -84,6 +84,11 @@
   }
   .div8 {
     grid-area: 8 / 1 / 9 / 2;
+  }
+
+  #boutonEnvoyer {
+    width: 80%;
+    margin: 12px 10% 10px;
   }
 
   /* Body */
@@ -179,5 +184,53 @@
   }
   .copyright i {
     font-size: 10px;
+  }
+
+  /*Shiny mode*/
+  .picto:hover:after {
+    bottom: -30px;
+    left: 30px;
+    border-radius: 25px;
+  }
+
+  .nyan {
+    width: 250%;
+    top: 200px;
+    left: -2300px;
+  }
+  .nyanpetit {
+    width: 50%;
+    top: 540px;
+    left: -1400px;
+  }
+
+  .nyanmouv {
+    animation: nyanmouvement 3s linear;
+  }
+  @keyframes nyanmouvement {
+    from {
+      top: 80px;
+      left: -1000px;
+    }
+    to {
+      top: 80px;
+      left: 1000px;
+    }
+  }
+
+  .nyanmouv2 {
+    animation: nyanmouvementinfinit 5s linear infinite;
+    animation-delay: 3s;
+  }
+
+  @keyframes nyanmouvementinfinit {
+    from {
+      top: 800px;
+      left: -200px;
+    }
+    to {
+      top: 800px;
+      left: 650px;
+    }
   }
 }

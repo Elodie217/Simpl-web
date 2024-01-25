@@ -19,7 +19,6 @@
   padding: 10px 10px 0px 10px;
   border: 2px solid hsl(322, 100%, 66%);
   box-shadow: 1px 1px 15px 1px lightgrey;
-  /* visibility: hidden; */
 }
 .flou {
   backdrop-filter: blur(5px);
@@ -27,7 +26,7 @@
   height: 100%;
   position: fixed;
   top: 0px;
-  /* visibility: hidden; */
+  z-index: 2;
 }
 
 .form {
@@ -96,9 +95,6 @@
 .div14 {
   grid-area: 2 / 2 / 3 / 3;
 }
-/* .radioflex input {
-  margin-left: 10px;
-} */
 
 .parentcheck {
   display: grid;
