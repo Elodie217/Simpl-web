@@ -25,6 +25,7 @@ drapeauJa.addEventListener("click", choixLangueJa);
 
     
 // Ajout du changement de langue 
+// Traduction de la page en anglais
 
 function choixLangueEn (){
 
@@ -68,8 +69,21 @@ function choixLangueEn (){
     document.querySelector(".yourPassion").innerText = 'Share my passions';
     document.querySelector("#boutonEnvoyer").value = 'Send';
 
+        // Article en anglais
+       
+    document.querySelector(".articleTrad1").innerText = 'Grow Together';
+    document.querySelector(".paragrapheTrad1").innerHTML = 'Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.';
+    document.querySelector(".articleTrad2").innerText = 'Flowing Conversations';
+    document.querySelector(".paragrapheTrad2").innerHTML = "You wouldn't paginate a conversation in real life, so why do it online ? Our threads have just-in-time loading for a more natural flow.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.";
+    document.querySelector(".articleTrad3").innerText = 'Your Users';
+    document.querySelector(".paragrapheTrad3").innerHTML = "It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.";
+
+    // Pour enregistrer la langue au chargement de la page
+
     window.localStorage.setItem("choixLangue", "en");
 }
+
+    // Traduction de la page en français
 
 function choixLangueFr(){
 
@@ -113,8 +127,20 @@ function choixLangueFr(){
     document.querySelector(".yourPassion").innerText = 'Partager mes passions';
     document.querySelector("#boutonEnvoyer").value = 'Envoyer';
 
+    // Article en français
+       
+    document.querySelector(".articleTrad1").innerText = 'Grandir Ensemble';
+    document.querySelector(".paragrapheTrad1").innerHTML = 'Générez des discussions significatives avec votre public et construisez une communauté forte et fidèle. Pensez aux conversations perspicaces que vous manquez avec un formulaire de commentaires.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.'
+    document.querySelector(".articleTrad2").innerText = 'Conversations Fluides';
+    document.querySelector(".paragrapheTrad2").innerHTML = "Vous ne pagineriez pas une conversation dans la vraie vie, alors pourquoi le faire en ligne ? Nos fils sont chargés juste à temps pour un flux plus naturel.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.";
+    document.querySelector(".articleTrad3").innerText = 'Vos Utilisateurs';
+    document.querySelector(".paragrapheTrad3").innerHTML = "L'intégration de Huddle à la solution d'authentification de votre application ne prend aucun temps. Cela signifie qu'une fois connectés à votre application, vos utilisateurs peuvent commencer à discuter immédiatement.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.";
+
+    // Pour enregistrer la langue au chargement de la page
+
     window.localStorage.setItem("choixLangue", "fr");
 }
+    // Traduction de la page en japonais
 
 function choixLangueJa (){
     document.querySelector(".tryitfree").innerText = '無料でお試しください';
@@ -157,6 +183,17 @@ function choixLangueJa (){
     document.querySelector(".feelLonely").innerText = '私は孤独を感じる';
     document.querySelector(".yourPassion").innerText = '私の情熱を共有してください';
     document.querySelector("#boutonEnvoyer").value = '送信';
+
+    // Pop-up en japonais
+       
+    document.querySelector(".articleTrad1").innerText = '共に成長する';
+    document.querySelector(".paragrapheTrad1").innerHTML = "視聴者と有意義なディスカッションを生み出し、強力で忠実なコミュニティを構築します。フィードバック フォームで見逃している洞察力に富んだ会話について考えてみましょう。会社自体は非常に成功している会社です。賛美者この問題を解決しても誰も逃げないのに、私たちはその言葉によって彼を激怒させるだろうか？"
+    document.querySelector(".articleTrad2").innerText = '流れるような会話';
+    document.querySelector(".paragrapheTrad2").innerHTML = "実生活では会話をページ分割することはないのに、なぜオンラインでそれを行うのでしょうか?私たちのスレッドは、より自然なフローのためにジャストインタイムでロードされます。会社自体は非常に成功している会社です。賛美者この問題を解決しても誰も逃げないのに、私たちはその言葉によって彼を激怒させるだろうか？"
+    document.querySelector(".articleTrad3").innerText = 'ユーザー';
+    document.querySelector(".paragrapheTrad3").innerHTML = "Huddle をアプリの認証ソリューションと統合するのに時間はかかりません。つまり、アプリにサインインすると、ユーザーはすぐにチャットを開始できるようになります。会社自体は非常に成功している会社です。賛美者この問題を解決しても誰も逃げないのに、私たちはその言葉によって彼を激怒させるだろうか？"
+
+    // Pour enregistrer la langue au chargement de la page
 
     window.localStorage.setItem("choixLangue", "ja");
 }
