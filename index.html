@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huddle : Agence web</title>
-<meta
+    <link rel="icon" href="images/favicon_32_32.png" />
+
+    <meta
       name="description"
       content="Bienvenue sur Huddle, le site qui vous propose une interface optimal pour votre réseau professionnel."
     />
@@ -107,7 +109,12 @@
     <!--Pop Up Inscription-->
     <div class="flou visibility"></div>
     <section class="popup visibility">
-      <img src="images/fermer.png" alt="logo fermeture" class="logofermeture" onclick="moveButton()"/>
+      <img
+        src="images/fermer.png"
+        alt="logo fermeture"
+        class="logofermeture"
+        onclick="moveButton()"
+      />
       <h2 class="formulaireTitle">Start For Free By Filling Out The Form</h2>
 
       <div class="form">
@@ -166,12 +173,16 @@
           </div>
 
           <fieldset class="div7">
-            <legend class="yourExpect">What do you expect from this community ?</legend>
+            <legend class="yourExpect">
+              What do you expect from this community ?
+            </legend>
 
             <div class="parentcheck">
               <div class="div11">
                 <input type="checkbox" id="friends" name="friends" checked />
-                <label for="friends" class="needFriend">Increase my circle of friends</label>
+                <label for="friends" class="needFriend"
+                  >Increase my circle of friends</label
+                >
               </div>
               <div class="div12">
                 <input type="checkbox" id="work" name="work" />
@@ -183,70 +194,85 @@
               </div>
               <div class="div14">
                 <input type="checkbox" id="passions" name="passions" />
-                <label for="passions" class="yourPassion">Share my passions</label>
+                <label for="passions" class="yourPassion"
+                  >Share my passions</label
+                >
               </div>
             </div>
           </fieldset>
 
           <div class="div8">
-            <input type="submit" name="Envoyer" id="boutonEnvoyer" value="Send"/>
-
+            <input
+              type="submit"
+              name="Envoyer"
+              id="boutonEnvoyer"
+              class="boutonpopup"
+              value="Send"
+            />
           </div>
         </div>
       </div>
     </section>
-      <main>
 
-        <!-- Pop Up Article-->
+    <!-- Pop Up Article-->
 
-        <div class="articleMain articleMain1 visibility">
-          <img
+    <section>
+      <div class="articleMain articleMain1 visibility">
+        <img
           src="./images/illustration_grow_together.svg"
           alt="Réseau de discussion entre utilisateur"
           class="imgmainBis"
         />
         <h2 class="firstHBis articleTrad1">Grow together</h2>
         <p class="premierPBis paragrapheTrad1">
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-            <br/>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.
-          </p>
-        </div>
-        <div class="articleMain articleMain2 visibility">
-          <img
+          Generate meaningful discussions with your audience and build a strong,
+          loyal community. Think of the insightful conversations you miss out on
+          with a feedback form.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cumque delectus odio perspiciatis quam iste iure similique at corporis
+          assumenda dignissimos ex quas voluptatibus deserunt, eius sit
+          excepturi accusamus eaque.
+        </p>
+      </div>
+      <div class="articleMain articleMain2 visibility">
+        <img
           src="./images/illustration_flowing_conversation.svg"
           alt="Réunion entre utilisateur"
           class="imgmainBis"
         />
         <h2 class="firstHBis articleTrad2">Flowing Conversations</h2>
         <p class="premierPBis paragrapheTrad2">
-            You wouldn't paginate a conversation in real life, so why do it
-            online ? Our threads have just-in-time loading for a more natural
-            flow.
-            <br/>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.
-          </p>
-        </div>
-        <div class="articleMain articleMain3 visibility">
-          <img
+          You wouldn't paginate a conversation in real life, so why do it online
+          ? Our threads have just-in-time loading for a more natural flow.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cumque delectus odio perspiciatis quam iste iure similique at corporis
+          assumenda dignissimos ex quas voluptatibus deserunt, eius sit
+          excepturi accusamus eaque.
+        </p>
+      </div>
+      <div class="articleMain articleMain3 visibility">
+        <img
           src="./images/illustration_your_users.svg"
           alt="Utilisateurs sur le reseau"
           class="imgmainBis"
         />
         <h2 class="firstHBis articleTrad3">Your Users</h2>
         <p class="premierPBis paragrapheTrad3">
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-            <br/>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque delectus odio perspiciatis quam iste iure similique at corporis assumenda dignissimos ex quas voluptatibus deserunt, eius sit excepturi accusamus eaque.
-          </p>
-        </div>
-        
-
-        <!-- Body -->
+          It takes no time at all to integrate Huddle with your app's
+          authentication solution. This means, once signed in to your app, your
+          users can start chatting immediately.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cumque delectus odio perspiciatis quam iste iure similique at corporis
+          assumenda dignissimos ex quas voluptatibus deserunt, eius sit
+          excepturi accusamus eaque.
+        </p>
+      </div>
+    </section>
+    <main>
+      <!-- Main -->
       <div class="flex affichage1">
         <div class="textemain textegauche">
           <h2 id="firstH">Grow together</h2>
@@ -280,7 +306,6 @@
         />
       </div>
       <div class="flex flex3 affichage3">
-
         <div class="textemain textegauche">
           <h2 id="thirdH">Your Users</h2>
           <p id="troisiemeP">
@@ -304,9 +329,8 @@
         <h2 id="fourthH">Ready To Build Your Community ?</h2>
         <div class="divbouton">
           <div class="boutongetstarted">Get started for Free</div>
-
         </div>
-              </section>
+      </section>
     </section>
 
     <!--Footer-->
@@ -345,9 +369,8 @@
       </section>
       <section class="colonne2">
         <a href="#" class="aPropos">About Us</a>
-        <a href="#" class="ceQuonFait" >What We Do</a>
+        <a href="#" class="ceQuonFait">What We Do</a>
         <a href="#" class="faq">FAQ</a>
-
       </section>
       <section class="colonne3">
         <a href="#" class="carriere">Career</a>
@@ -383,7 +406,6 @@
   <script src="./script/script.js"></script>
 
   <script src="./script/FlewButton.js"></script>
-  
-  <script src="script/shiny.js"></script>
 
+  <script src="script/shiny.js"></script>
 </html>

@@ -308,11 +308,11 @@ input:checked + .slider:before {
 
 @keyframes nyanmouvementinfinit {
   from {
-    top: 540px;
+    top: 85vh;
     left: -300px;
   }
   to {
-    top: 540px;
+    top: 85vh;
     left: 1400px;
   }
 }

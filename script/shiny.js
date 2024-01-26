@@ -18,6 +18,9 @@ let couleurborder1 = document.querySelector(".popup");
 let couleurborder2 = document.querySelector(".icone");
 let couleurborder3 = document.querySelector(".icone2");
 let couleurborder4 = document.querySelector(".icone3");
+let couleurborder5 = document.querySelector(".articleMain1");
+let couleurborder6 = document.querySelector(".articleMain2");
+let couleurborder7 = document.querySelector(".articleMain3");
 
 let boutonformman1 = document.getElementById("man");
 let boutonformman2 = document.getElementById("Woman");
@@ -55,6 +58,9 @@ function checkValue() {
     couleurborder2.classList.add("shinyborder");
     couleurborder3.classList.add("shinyborder");
     couleurborder4.classList.add("shinyborder");
+    couleurborder5.classList.add("shinyborder");
+    couleurborder6.classList.add("shinyborder");
+    couleurborder7.classList.add("shinyborder");
 
     boutonformman1.classList.add("shinyboutonform");
     boutonformman2.classList.add("shinyboutonform");
@@ -92,6 +98,9 @@ function checkValue() {
     couleurborder2.classList.remove("shinyborder");
     couleurborder3.classList.remove("shinyborder");
     couleurborder4.classList.remove("shinyborder");
+    couleurborder5.classList.remove("shinyborder");
+    couleurborder6.classList.remove("shinyborder");
+    couleurborder7.classList.remove("shinyborder");
 
     boutonformman1.classList.remove("shinyboutonform");
     boutonformman2.classList.remove("shinyboutonform");

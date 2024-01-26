@@ -20,6 +20,7 @@ function popupfermer() {
   popup.classList.add("visibility");
   flou.classList.add("visibility");
 }
+
 // Pop - up Main //
 
 // Je définis mes valeurs pour mes 3 articles à cliquer pour zoom
@@ -44,7 +45,6 @@ articleFlottant2.addEventListener("click", articleFermeture2);
 article3.addEventListener("click", articleAffichage3);
 articleFlottant3.addEventListener("click", articleFermeture3);
 
-
 function articleAffichage1() {
   articleFlottant1.classList.remove("visibility");
   flou.classList.remove("visibility");
@@ -57,7 +57,6 @@ function articleAffichage3() {
   articleFlottant3.classList.remove("visibility");
   flou.classList.remove("visibility");
 }
-
 
 function articleFermeture1() {
   articleFlottant1.classList.add("visibility");
