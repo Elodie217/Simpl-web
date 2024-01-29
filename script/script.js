@@ -22,6 +22,11 @@ function affichageerreur() {
   }
 }
 
+let drapeauFr = document.querySelector("#drapeauFr");
+let drapeauEn = document.querySelector("#drapeauEn");
+let drapeauJa = document.querySelector("#drapeauJa");
+
+
 // Garder en mémoire au chargement de la page
 
 let langueChoisie = window.localStorage.getItem("choixLangue");
@@ -43,9 +48,7 @@ switch (langueChoisie) {
 
 // Définition des variables pour la traduction
 
-let drapeauFr = document.querySelector("#drapeauFr");
-let drapeauEn = document.querySelector("#drapeauEn");
-let drapeauJa = document.querySelector("#drapeauJa");
+
 
 drapeauEn.addEventListener("click", choixLangueEn);
 drapeauFr.addEventListener("click", choixLangueFr);
@@ -55,6 +58,11 @@ drapeauJa.addEventListener("click", choixLangueJa);
 // Traduction de la page en anglais
 
 function choixLangueEn() {
+
+  drapeauJa.style.scale = "1";
+  drapeauFr.style.scale = "1";
+  drapeauEn.style.scale = "1.3";
+
   document.querySelector(".tryitfree").innerText = "Try It Free";
   document.querySelector("h1").innerText =
     "Build The Community Your Fans Will Love";
@@ -127,6 +135,11 @@ function choixLangueEn() {
 // Traduction de la page en français
 
 function choixLangueFr() {
+
+  drapeauJa.style.scale = "1";
+  drapeauFr.style.scale = "1.3";
+  drapeauEn.style.scale = "1";
+
   document.querySelector(".tryitfree").innerText = "Essai Gratuit";
   document.querySelector("h1").innerText =
     "Créez la communauté adorée pour vos fans ";
@@ -200,6 +213,11 @@ function choixLangueFr() {
 // Traduction de la page en japonais
 
 function choixLangueJa() {
+
+  drapeauJa.style.scale = "1.3";
+  drapeauFr.style.scale = "1";
+  drapeauEn.style.scale = "1";
+
   document.querySelector(".tryitfree").innerText = "無料でお試しください";
   document.querySelector("h1").innerText =
     "ファンが気に入るコミュニティを構築する ";
@@ -279,4 +297,4 @@ function langue(langueOnClick) {
   }
 }
 
-// Ajout en mémoire de la langue définie
+

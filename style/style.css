@@ -35,6 +35,9 @@ p {
   cursor: pointer;
   transform: scale(1.5);
 }
+.drapeau:focus{
+  transform: scale(1.2);
+}
 
 header {
   background-image: url(../images/bg_hero_desktop.svg);
